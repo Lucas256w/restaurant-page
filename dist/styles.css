@@ -1,0 +1,88 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+
+
+/* GENERAL SETTINGS */
+
+:root {
+    --white: #FFFFFF;
+    --black: #000000;
+    --red: #DA2029;
+    --container-width: 1200px;
+    --border-radius: 8px;
+    --spacing-xs: 5px;
+    --spacing-sm: 10px;
+    --spacing-md: 15px;
+    --spacing-lg: 20px;
+    --spacing-xl: 40px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    min-height: 100vh;
+    font-family: 'PT Serif', serif;
+    color: var(--black);
+    word-wrap: break-word;
+    
+}
+
+/* HEADER */
+
+header {
+    display: flex;
+    font-size: 2rem;
+    justify-content: center;
+}
+
+#header-container {
+    flex: 1;
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    max-width: var(--container-width);
+}
+
+.nav-button {
+    margin-left: 10px;
+    border: none;
+    background-color: var(--white);
+    font-size: large;
+    font-weight: 600;
+    font-family: 'Rubik', sans-serif;
+    transition: color 0.3s;
+}
+
+.nav-button:hover {
+    cursor: pointer;
+    color: var(--red);
+}
+
+/* MAIN */
+
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+}

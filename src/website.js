@@ -5,9 +5,16 @@ class Button {
 function makeHeader() {
     const header = document.createElement("header");
 
+    const headerContainer = document.createElement('div')
+    headerContainer.setAttribute('id', 'header-container')
+
+    const btnContainer = document.createElement('div')
+    btnContainer.setAttribute('id', 'button-container');
+
     const btnOne = document.createElement('button')
     const btnTwo = document.createElement('button')
     const btnThree = document.createElement('button')
+
     const title = document.createElement('div')
 
     title.setAttribute('id', 'resturant-name')
@@ -16,16 +23,24 @@ function makeHeader() {
     btnTwo.setAttribute('id', 'menu-btn');
     btnThree.setAttribute('id', 'contact-btn');
 
+    btnOne.setAttribute('class', 'nav-button')
+    btnTwo.setAttribute('class', 'nav-button')
+    btnThree.setAttribute('class', 'nav-button')
+
     title.textContent = 'Korean BBQ'
 
     btnOne.textContent = 'Home'
     btnTwo.textContent = 'Menu'
     btnThree.textContent = 'Contact'
 
-    header.appendChild(title);
-    header.appendChild(btnOne);
-    header.appendChild(btnTwo);
-    header.appendChild(btnThree);
+    btnContainer.appendChild(btnOne);
+    btnContainer.appendChild(btnTwo);
+    btnContainer.appendChild(btnThree);
+
+    headerContainer.appendChild(title);
+    headerContainer.appendChild(btnContainer)
+
+    header.appendChild(headerContainer);
 
     return header
 }
