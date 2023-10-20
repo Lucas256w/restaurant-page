@@ -37,14 +37,16 @@ time, mark, audio, video {
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
     min-height: 100vh;
     font-family: 'PT Serif', serif;
-    color: var(--black);
-    word-wrap: break-word;
+    background: url(./images/19021593.jpg);
     
+}
+
+#content {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 /* HEADER */
@@ -53,6 +55,7 @@ header {
     display: flex;
     font-size: 2rem;
     justify-content: center;
+    background-color: var(--white);
 }
 
 #header-container {
@@ -80,9 +83,40 @@ header {
 
 /* MAIN */
 
+main {
+    flex: 1;
+    max-width: var(--container-width);
+}
+
+/* HOMEPAGE */
+main#home-page {
+    display: flex;
+    justify-content: center;
+}
+
+#welcome-text {
+    font-size: 4rem;
+    font-weight: 800;
+    text-align: center;
+}
+
+#home-page-container {
+    padding: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+#home-page-image {
+    height: 400px;
+    border-radius: var(--border-radius);
+}
 
 /* FOOTER */
 
 footer {
+    padding: 20px;
     text-align: center;
+    background-color: var(--white);
 }
