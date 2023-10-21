@@ -92,6 +92,7 @@ main {
     justify-content: center;
     align-self: center;
     width: 100%;
+    align-items: center;
 }
 
 /* HOMEPAGE */
@@ -165,6 +166,72 @@ main {
 
 .description {
     color: var(--white);
+}
+
+/* CONTACT US */
+#contact-container {
+    background-color: var(--black);
+    color: var(--white);
+    padding: var(--spacing-lg);
+    border-radius: var(--border-radius);
+    max-height: 100%;
+}
+
+#contact-title {
+    font-size: 2rem;
+    font-weight: 900;
+    margin-bottom: var(--spacing-md);
+}
+
+img#meats {
+    height: 400px;
+}
+
+#form-and-image-container {
+    display: flex;
+    gap: var(--spacing-xl);
+}
+
+#form-container {
+    display: grid;
+    grid-template-rows: 100px 1fr;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+input {
+    outline: none;
+    width: 400px;
+    height: 25px;
+    font-size: large;
+    border-radius: 4px;
+    font-family: inherit;
+}
+
+textarea {
+    font-size: large;
+    font-family: inherit;
+    resize: none;
+    height: 200px;
+}
+
+#submit-button {
+    font-size: inherit;
+    font-family: inherit;
+    border: none;
+    background-color: var(--white);
+    width: 150px;
+    height: 40px;
+    border-radius: 4px;
+}
+
+#submit-button:hover {
+    cursor: pointer;
+    filter: brightness(90%);
 }
 
 /* FOOTER */
