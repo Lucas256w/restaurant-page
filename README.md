@@ -1,7 +1,7 @@
 # resturant-page
 
 ## <a href="https://lucas256w.github.io/resturant-page/">Live Demo</a>
-<img width="1171" alt="image" src="https://github.com/Lucas256w/resturant-page/assets/112456075/b4dfab01-e4b3-4ad0-837e-b8e9b944711b">
+<img width="1440" alt="image" src="https://github.com/Lucas256w/resturant-page/assets/112456075/d59f423b-b904-4266-a8bd-d4a4081ce4f3">
 <h3>A resturant page with 3 alternating tabs, utilizes Webpack</h3>
 
 <h3 align="left">Languages and Tools:</h3>
