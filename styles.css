@@ -25,7 +25,7 @@ time, mark, audio, video {
 
 :root {
     --white: #FFFFFF;
-    --black: #000000;
+    --black: #232323;
     --red: #DA2029;
     --container-width: 1200px;
     --border-radius: 8px;
@@ -56,6 +56,7 @@ header {
     font-size: 2rem;
     justify-content: center;
     background-color: var(--white);
+    border-bottom: 2px solid var(--black);
 }
 
 #header-container {
@@ -86,13 +87,18 @@ header {
 main {
     flex: 1;
     max-width: var(--container-width);
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    width: 100%;
 }
 
 /* HOMEPAGE */
-main#home-page {
+/* main#home-page {
     display: flex;
     justify-content: center;
-}
+} */
 
 #welcome-text {
     font-size: 4rem;
@@ -101,7 +107,6 @@ main#home-page {
 }
 
 #home-page-container {
-    padding: 25px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: center;
@@ -113,10 +118,60 @@ main#home-page {
     border-radius: var(--border-radius);
 }
 
+/* MENU */
+
+#menu-content {
+    display: flex;
+    padding: var(--spacing-xl);
+    flex-direction: column;
+    width: 100%;
+    background: var(--black);
+    border-radius: var(--border-radius);
+}
+
+.menu-subtitle {
+    font-size: 3rem;
+    font-weight: 600;
+    border-bottom: 2px solid var(--white);
+    margin-bottom: var(--spacing-md);
+    color: var(--white);
+}
+
+.options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+}
+
+.card {
+    border-radius: var(--border-radius);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.item-pic {
+    height: 200px;
+    margin-right: 20px;
+    border-radius: var(--border-radius);
+}
+
+.item-name {
+    color: var(--red);
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.description {
+    color: var(--white);
+}
+
 /* FOOTER */
 
 footer {
     padding: 20px;
     text-align: center;
     background-color: var(--white);
+    border-top: 2px solid var(--black);
 }
