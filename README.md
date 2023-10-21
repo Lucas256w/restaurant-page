@@ -1,6 +1,6 @@
 # restaurant-page
 
-## <a href="https://lucas256w.github.io/resturant-page/">Live Demo</a>
+## <a href="https://lucas256w.github.io/restaurant-page/">Live Demo</a>
 <img width="1440" alt="image" src="https://github.com/Lucas256w/resturant-page/assets/112456075/d59f423b-b904-4266-a8bd-d4a4081ce4f3">
 <h3>A restaurant page with 3 alternating tabs, utilizes Webpack</h3>
 
