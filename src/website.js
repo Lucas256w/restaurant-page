@@ -27,7 +27,7 @@ function makeHeader() {
     btnTwo.setAttribute('class', 'nav-button')
     btnThree.setAttribute('class', 'nav-button')
 
-    title.textContent = 'Korean BBQ'
+    title.textContent = 'The Gourmet Grille'
 
     btnOne.textContent = 'Home'
     btnTwo.textContent = 'Menu'
