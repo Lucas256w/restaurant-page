@@ -87,7 +87,7 @@ header {
 main {
     flex: 1;
     max-width: var(--container-width);
-    padding: 25px;
+    padding: 25px 0;
     display: flex;
     justify-content: center;
     align-self: center;
@@ -96,10 +96,6 @@ main {
 }
 
 /* HOMEPAGE */
-/* main#home-page {
-    display: flex;
-    justify-content: center;
-} */
 
 #welcome-text {
     font-size: 4rem;
@@ -242,3 +238,37 @@ footer {
     background-color: var(--white);
     border-top: 2px solid var(--black);
 }
+
+/* MEDIA */
+
+@media only screen and (max-width: 1000px) {
+
+    /* MAIN */
+    #home-page-container {
+        grid-template-columns: 1fr
+    }
+
+    #home-page-image {
+        height: 300px;
+    }
+
+    /* MENU */
+
+    .options {
+        grid-template-columns: 1fr;
+        gap: 100px;
+    }
+
+    /* CONTACT */
+
+    img#meats {
+        display: none;
+    }
+
+    #submit-button {
+        width: auto;
+        height: 50px;
+        border-radius: 4px;
+    }
+};
+    
